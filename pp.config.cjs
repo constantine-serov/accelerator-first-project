@@ -1,40 +1,40 @@
 const desktopSections = [
-  {section: 'header', misMatchThreshold: 1.1},
-  {section: 'hero', misMatchThreshold: 0.4},
-  {section: 'tours', misMatchThreshold: 0.7},
-  {section: 'training', misMatchThreshold: 2.1},
-  {section: 'about', misMatchThreshold: 1.5},
-  {section: 'reviews', misMatchThreshold: 2.4},
-  {section: 'adv', misMatchThreshold: 1.2},
-  {section: 'gallery', misMatchThreshold: 0.4},
-  {section: 'form', misMatchThreshold: 0.6},
-  {section: 'footer', misMatchThreshold: 1.2}
+  {section: 'hero', misMatchThreshold: 0.3},
+  {section: 'about', misMatchThreshold: 0.3},
+  {section: 'programs', misMatchThreshold: 0.3},
+  {section: 'grant', misMatchThreshold: 0.3},
+  {section: 'news', misMatchThreshold: 0.3},
+  {section: 'FAQ', misMatchThreshold: 0.3},
+  {section: 'reviews', misMatchThreshold: 0.3},
+  {section: 'contacts', misMatchThreshold: 0.3},
+  {section: 'form', misMatchThreshold: 0.3},
+  {section: 'footer', misMatchThreshold: 0.3}
 ]
 
 const tabletSections = [
-  {section: 'header', misMatchThreshold: 1.3},
-  {section: 'hero', misMatchThreshold: 0.8},
-  {section: 'tours', misMatchThreshold: 1.1},
-  {section: 'training', misMatchThreshold: 3.5},
-  {section: 'about', misMatchThreshold: 3.5},
-  {section: 'reviews', misMatchThreshold: 2.5},
-  {section: 'adv', misMatchThreshold: 0.8},
-  {section: 'gallery', misMatchThreshold: 0.7},
-  {section: 'form', misMatchThreshold: 1.2},
-  {section: 'footer', misMatchThreshold: 1.1},
+  {section: 'hero', misMatchThreshold: 0.3},
+  {section: 'about', misMatchThreshold: 0.3},
+  {section: 'programs', misMatchThreshold: 0.3},
+  {section: 'grant', misMatchThreshold: 0.3},
+  {section: 'news', misMatchThreshold: 0.3},
+  {section: 'FAQ', misMatchThreshold: 0.3},
+  {section: 'reviews', misMatchThreshold: 0.3},
+  {section: 'contacts', misMatchThreshold: 0.3},
+  {section: 'form', misMatchThreshold: 0.3},
+  {section: 'footer', misMatchThreshold: 0.3}
 ]
 
 const mobileSections = [
-  {section: 'header', misMatchThreshold: 2.2},
-  {section: 'hero', misMatchThreshold: 1.2},
-  {section: 'tours', misMatchThreshold: 2.2},
-  {section: 'training', misMatchThreshold: 4.3},
-  {section: 'about', misMatchThreshold: 3.5},
-  {section: 'reviews', misMatchThreshold: 2.6},
-  {section: 'adv', misMatchThreshold: 1.2},
-  {section: 'gallery', misMatchThreshold: 0.7},
-  {section: 'form', misMatchThreshold: 1.1},
-  {section: 'footer', misMatchThreshold: 1.1},
+  {section: 'hero', misMatchThreshold: 0.3},
+  {section: 'about', misMatchThreshold: 0.3},
+  {section: 'programs', misMatchThreshold: 0.3},
+  {section: 'grant', misMatchThreshold: 0.3},
+  {section: 'news', misMatchThreshold: 0.3},
+  {section: 'FAQ', misMatchThreshold: 0.3},
+  {section: 'reviews', misMatchThreshold: 0.3},
+  {section: 'contacts', misMatchThreshold: 0.3},
+  {section: 'form', misMatchThreshold: 0.3},
+  {section: 'footer', misMatchThreshold: 0.3}
 ]
 
 const VIEWPORTS = {
