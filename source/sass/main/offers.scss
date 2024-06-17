@@ -1,0 +1,491 @@
+.offers__picture img {
+  display: block;
+}
+
+.offers__main > dl {
+  background-color: $bg-offers;
+}
+
+.offers__main a {
+  text-transform: uppercase;
+  text-decoration: underline #74819C;
+  text-underline-offset: 5px;
+  text-align: center;
+}
+
+.offers__main > a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+
+  color: $text-light;
+  text-decoration: underline $text-light;
+  text-underline-offset: 5px;
+  background-color: $bg-offers;
+}
+
+@media (width <= 767px) {
+  .offers {
+    padding: 38px 0 38px 0;
+  }
+
+  .offers__title {
+    font-family: "Alumni Sans", serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+
+    margin: 0;
+  }
+
+  .offers__main {
+    box-sizing: border-box;
+    padding: 39px 0 0;
+
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: minmax(221px, auto) minmax(50px, auto) minmax(360px, auto);
+
+    grid-template-areas:
+      "promo"
+      "href"
+      "picture"
+      "campaign";
+  }
+
+  .offers__main dl {
+    grid-area: promo;
+
+    box-sizing: border-box;
+    padding: 25px;
+
+    height: 100%;
+    margin: 0;
+  }
+
+  .offers__main dl dt {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+
+    color: $text-light;
+
+    padding-top: 7px;
+  }
+
+  .offers__main dl dd {
+    color: $text-light;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .offers__main dl dd span {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+
+
+    display: block;
+    margin: 0;
+  }
+
+  .offers__main dl dd p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+
+    padding: 26px 20px 0;
+    margin: 0;
+  }
+
+  .offers__picture {
+    grid-area: picture;
+    display: block;
+  }
+
+  .offers__main > a {
+    text-align: center;
+    height: 101%;
+    grid-area: href;
+    padding: 2px 0 4px;
+    border-bottom: 1px solid $text-light;
+  }
+
+  .offers__list {
+    padding: 40px 15px 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    list-style: none;
+    grid-area: campaign;
+  }
+
+  .offers__list li {
+    box-sizing: border-box;
+    width: 290px;
+    min-height: 158px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 15px;
+    padding-bottom: 20px;
+
+    border: 7px solid transparent;
+    border-image: linear-gradient(to top, #d10a42, #00359f) 1;
+  }
+
+  .offers__list dl {
+    height: min-content;
+    padding: 15px 20px 5px;
+  }
+
+  .offers__list dl dt {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+
+    color: $offers-color;
+  }
+
+  .offers__list dl dd {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+
+    color: $offers-color;
+    padding-top: 20px;
+  }
+
+  .offers__list li a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+
+    display: block;
+    padding: 0 0 4px;
+    color: $offers-color;
+  }
+}
+
+@media (width >= 768px) and (width <= 1365px) {
+  .offers {
+    padding: 58px 0 22px;
+  }
+
+  .offers__title {
+    font-family: "Alumni Sans", serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    margin: 0;
+
+    padding-bottom: 34px;
+  }
+
+  .offers__main {
+    box-sizing: border-box;
+    width: 678px;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 278px 400px;
+    grid-template-rows: 82px minmax(174px, auto) 30px minmax(104px, auto) 70px;
+
+    grid-template-areas:
+      "promo    picture"
+      "promo    picture"
+      "promo    picture"
+      "promo    picture"
+      "href     picture"
+      "campaign campaign";
+  }
+
+  .offers__main dl {
+    grid-area: promo;
+
+    box-sizing: border-box;
+    padding-top: 26px;
+    padding-left: 25px;
+
+    height: 100%;
+    margin: 0;
+  }
+
+  .offers__main dl dt {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $text-light;
+
+    padding-top: 15px;
+  }
+
+  .offers__main dl dd {
+    color: $text-light;
+    padding-top: 18px;
+    margin: 0;
+  }
+
+  .offers__main dl dd span {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0;
+    text-align: left;
+
+    display: block;
+    margin: 0;
+  }
+
+  .offers__main dl dd p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+
+    padding-top: 42px;
+    margin: 0;
+  }
+
+  .offers__picture {
+    grid-area: picture;
+    display: block;
+  }
+
+  .offers__main > a {
+    text-align: left;
+    grid-area: href;
+    padding: 14px 25px;
+  }
+
+  .offers__list {
+    padding: 38px 0;
+    margin: 0;
+
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+    grid-area: campaign;
+  }
+
+  .offers__list li {
+    box-sizing: border-box;
+    width: 324px;
+    min-height: 188px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 7px solid transparent;
+    border-image: linear-gradient(to top, #d10a42, #00359f) 1;
+  }
+
+  .offers__list dl {
+    height: min-content;
+    padding: 5px 20px;
+  }
+
+  .offers__list dl dt {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+
+    color: $offers-color;
+  }
+
+  .offers__list dl dd {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    color: $offers-color;
+    padding-top: 10px;
+  }
+
+  .offers__list li a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+
+    display: block;
+    padding: 0 0 25px 19px;
+    color: $offers-color;
+  }
+}
+
+@media (width >= 1366px) {
+  .offers {
+    padding: 98px 0 96px 0;
+  }
+
+  .offers__title {
+    font-family: "Alumni Sans", serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+
+    text-align: center;
+    margin: 0;
+  }
+
+  .offers__main {
+    box-sizing: border-box;
+    padding: 73px 103px 0;
+
+
+    display: grid;
+    grid-template-columns: 280px 280px 40px 560px;
+    grid-template-rows: 82px minmax(174px, auto) 30px minmax(104px, auto) 70px;
+
+    grid-template-areas:
+      "promo picture . ."
+      "promo picture . campaign"
+      "promo picture . campaign"
+      "promo picture . campaign"
+      "href  picture . campaign";
+  }
+
+  .offers__main dl {
+    grid-area: promo;
+
+    box-sizing: border-box;
+    padding-top: 26px;
+    padding-left: 45px;
+
+    height: 100%;
+    margin: 0;
+  }
+
+  .offers__main dl dt {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $text-light;
+
+    padding-top: 15px;
+  }
+
+  .offers__main dl dd {
+    color: $text-light;
+    padding-top: 18px;
+    margin: 0;
+  }
+
+  .offers__main dl dd span {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0;
+    text-align: left;
+
+    display: block;
+    margin: 0;
+  }
+
+  .offers__main dl dd p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+
+    padding-top: 42px;
+    margin: 0;
+  }
+
+  .offers__picture {
+    grid-area: picture;
+    display: block;
+  }
+
+  .offers__main > a {
+    text-align: left;
+    grid-area: href;
+    padding: 11px 45px;
+  }
+
+  .offers__list {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    list-style: none;
+    grid-area: campaign;
+  }
+
+  .offers__list li {
+    min-height: 174px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 7px solid transparent;
+    border-image: linear-gradient(to top, #d10a42, #00359f) 1;
+  }
+
+  .offers__list dl {
+    height: min-content;
+    padding: 5px 20px;
+  }
+
+  .offers__list dl dt {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+
+    color: $offers-color;
+  }
+
+  .offers__list dl dd {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    color: $offers-color;
+    padding-top: 12px;
+  }
+
+  .offers__list li a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+
+    display: block;
+    padding: 0 0 25px 19px;
+    color: $offers-color;
+  }
+}

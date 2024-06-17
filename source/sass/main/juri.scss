@@ -1,0 +1,204 @@
+
+.juri {
+  position: relative;
+}
+
+.juri__title {
+  box-sizing: border-box;
+  font-family: "Alumni Sans", serif;
+  font-weight: 600;
+
+  margin: 0 auto;
+}
+
+.juri-list {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.juri-list__card {
+  order: 2;
+}
+
+.juri-list img {
+  display: block;
+}
+
+.juri-list__card-photo {
+  display: block;
+  width: min-content;
+  height: 100%;
+}
+
+.juri-list__card-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $text-light;
+
+  position: absolute;
+  bottom: 0;
+
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+.juri__slider-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  height: 300px;
+  width: 46px;
+  top: -106px;
+
+  color: $text-dark;
+}
+
+.juri__slider-button--left svg {
+  transform: rotate(180deg);
+}
+
+@media (width <= 767px) {
+  .juri {
+    padding: 40px 0 20px;
+  }
+
+  .juri__wrapper {
+    width: 228px;
+  }
+
+  .juri__title {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    width: 320px;
+
+    padding: 0 45px;
+  }
+
+  .juri-list {
+    padding: 20px 0;
+  }
+
+  .juri-list__card {
+    width: 227px;
+    height: 280px;
+  }
+
+  .juri-list__card:nth-child(3) {
+    order: 1;
+  }
+
+  .juri-list__card-photo img {
+    width: 227px;
+    height: 280px;
+  }
+
+  .juri-list__card-name {
+    font-size: 19px;
+    width: 227px;
+
+    padding: 10px 10px 22px;
+  }
+
+  .juri__slider-button {
+    display: none;
+  }
+}
+
+@media (width >= 768px) and (width <= 1365px) {
+  .juri {
+    padding: 30px 0 60px;
+  }
+
+  .juri__wrapper {
+    width: 600px;
+    padding: 0 56px;
+  }
+
+  .juri__title {
+    width: 678px;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: center;
+
+    padding: 0 45px;
+  }
+
+  .juri-list {
+    width: 560px;
+    padding: 46px 0 0;
+  }
+
+  .juri-list__card {
+    width: 260px;
+    height: 300px;
+  }
+
+  .juri-list__card-name {
+    width: 260px;
+    padding: 10px 10px 24px;
+  }
+
+  .juri__slider-button {
+    transform: translate(0, 50%) scale(0.8);
+  }
+
+  .juri__slider-button--right {
+    right: 0;
+  }
+
+  .juri__slider-button--left {
+    left: 0;
+  }
+}
+
+@media (width >= 1366px) {
+  .juri {
+    padding: 100px 0;
+  }
+
+  .juri__wrapper {
+    width: 1200px;
+    padding: 0 56px;
+  }
+
+  .juri__title {
+    width: 1160px;
+    margin: 0 auto;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: left;
+  }
+
+  .juri-list {
+    width: 1160px;
+    padding: 44px 0 0;
+  }
+
+  .juri-list__card {
+    width: 260px;
+    height: 300px;
+  }
+
+  .juri-list__card-name {
+    width: 260px;
+    padding: 8px 10px 24px;
+  }
+
+  .juri__slider-button {
+    transform: translate(0, 50%);
+  }
+
+  .juri__slider-button--right {
+    right: 4px;
+  }
+
+  .juri__slider-button--left {
+    left: 4px;
+  }
+}

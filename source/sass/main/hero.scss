@@ -1,0 +1,312 @@
+.hero {
+  color: $text-light;
+  background: $bg-hero;
+}
+
+.hero__header {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.page-main__logo {
+  display: block;
+}
+
+.page-main__telephone:hover {
+  color: $text-dark;
+  opacity: 50%;
+}
+
+.page-main__telephone:focus {
+  color: $faq-button-accord;
+}
+
+.page-main__telephone:active {
+  color: $text-dark;
+}
+
+.page-main__telephone:active {
+  color: $text-dark;
+}
+
+.page-main__telephone.disabled {
+  color: $bg-section;
+}
+
+.page-main__telephone {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+
+  display: block;
+  text-align: center;
+  color: $text-light;
+  text-decoration: none;
+}
+
+.hero-main {
+  box-sizing: border-box;
+  display: grid;
+}
+
+.hero-main__city {
+  font-family: "Alumni Sans", serif;
+  font-weight: 600;
+  font-style: normal;
+
+  text-align: right;
+  color: inherit;
+  margin: 0;
+}
+
+.hero-main__title {
+  font-family: "Alumni Sans", serif;
+  font-weight: 800;
+  text-align: right;
+  font-style: normal;
+
+  text-transform: uppercase;
+  color: inherit;
+  margin: 0;
+}
+
+.hero-main__list {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  grid-area: list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-main__button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding-top: 26px;
+  border: 2px solid $text-light;
+}
+
+.hero-main__picture {
+  background-color: $bg-hero-picture;
+}
+
+.hero-main__picture img {
+  display: block;
+}
+
+@media (width <= 767px) {
+  .hero__header {
+    min-height: 54px;
+    padding: 16px 15px;
+  }
+
+  .page-main__logo {
+    width: 100px;
+    height: 20px;
+  }
+
+  .page-main__telephone {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .hero-main {
+    padding: 48px 15px 32px;
+
+    grid-template-columns: 113px 21px 156px;
+    grid-template-rows: minmax(32px, auto) 14px minmax(64px, auto) minmax(60px, 1fr) 47px minmax(60px, auto);
+
+    grid-template-areas:
+      ".      .      city"
+      ".      .      ."
+      ".      .      title"
+      "list   .      title"
+      ".      .      ."
+      "button button button";
+  }
+
+  .hero-main__city {
+    font-size: 32px;
+    line-height: 32px;
+
+    grid-area: city;
+  }
+
+  .hero-main__list {
+    font-size: 14px;
+    line-height: 20px;
+
+    grid-area: list;
+  }
+
+  .hero-main__title {
+    font-size: 62px;
+    line-height: 62px;
+    letter-spacing: 1px;
+
+    grid-area: title;
+    padding: 1px 0 0 1px;
+  }
+
+  .hero-main__button {
+    padding-top: 22px;
+    grid-area: button;
+  }
+
+  .hero-main__picture {
+    display: none;
+  }
+}
+
+@media (width >= 768px) and (width <= 1365px) {
+  .hero__header {
+    width: 768px;
+    min-height: 84px;
+    padding: 30px 45px;
+  }
+
+  .page-main__logo {
+    width: 110px;
+    height: 22px;
+  }
+
+  .page-main__telephone {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: right;
+  }
+
+  .hero-main {
+    padding: 0 45px 100px;
+
+    grid-template-columns: 113px 26px 185px 30px 324px;
+    grid-template-rows: 32px minmax(42px, auto) 9px minmax(170px, 1fr) 50px minmax(56px, auto) 30px;
+
+    grid-template-areas:
+      ".    . .      . picture"
+      ".    . city   . picture"
+      ".    . .      . picture"
+      "list . title  . picture"
+      ".    . .      . picture"
+      ".    . button . picture"
+      ".    . .      . picture";
+  }
+
+  .hero-main__city {
+    font-size: 42px;
+    line-height: 42px;
+
+    grid-area: city;
+  }
+
+  .hero-main__list {
+    font-size: 14px;
+    line-height: 22px;
+
+    grid-area: list;
+
+    padding: 56px 0 0;
+  }
+
+  .hero-main__title {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+
+    grid-area: title;
+  }
+
+  .hero-main__button {
+    padding-top: 20px;
+
+    grid-area: button;
+  }
+
+  .hero-main__picture {
+    grid-area: picture;
+  }
+}
+
+@media (width >= 1366px) {
+  .hero__header {
+    width: 1366px;
+    min-height: 86px;
+    padding: 30px 103px;
+  }
+
+  .page-main__logo {
+    width: 130px;
+    height: 26px;
+  }
+
+  .page-main__telephone {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .hero-main {
+    padding: 30px 175px 120px 250px;
+
+    grid-template-columns: 115px 270px 56px 500px;
+    grid-template-rows: 52px minmax(54px, auto) 40px minmax(220px, 1fr) 40px minmax(66px, auto) 52px;
+
+    grid-template-areas:
+      ".    .      . picture"
+      ".    city   . picture"
+      ".    .      . picture"
+      "list title  . picture"
+      ".    .      . picture"
+      ".    button . picture"
+      ".    .      . picture";
+  }
+
+  .hero-main__city {
+    font-size: 54px;
+    line-height: 54px;
+
+    grid-area: city;
+  }
+
+  .hero-main__list {
+    font-size: 14px;
+    line-height: 22px;
+
+    grid-area: list;
+
+    padding-top: 14px;
+    padding-bottom: 3px;
+  }
+
+  .hero-main__title {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+
+    grid-area: title;
+  }
+
+  .hero-main__button {
+    grid-area: button;
+  }
+
+  .hero-main__picture {
+    grid-area: picture;
+  }
+}

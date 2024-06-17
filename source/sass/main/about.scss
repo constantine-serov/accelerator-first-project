@@ -1,0 +1,256 @@
+.about {
+  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
+  color: $text-dark;
+}
+
+.about__picture img {
+  display: block;
+}
+
+.about__video {
+  position: absolute;
+  border: none;
+}
+
+@media (width <= 767px) {
+  .about {
+    padding: 40px 0;
+  }
+
+  .about__main {
+    box-sizing: border-box;
+    padding: 0 0 206px 0;
+  }
+
+  .about__title {
+    font-family: "Alumni Sans", serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+
+    margin: 0;
+    padding: 0 15px;
+    color: inherit;
+  }
+
+  .about__text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .about__termin {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+    margin: 0;
+    padding: 11px 0 16px;
+  }
+
+  .about__text dd {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 35px;
+  }
+
+  .about__text dd span {
+    display: none;
+  }
+
+  .about__text span {
+    display: block;
+    padding-top: 8px;
+  }
+
+  .about__picture {
+    width: 320px;
+    height: 280px;
+    padding-bottom: 206px;
+  }
+
+  .about__video {
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 170px;
+  }
+}
+
+@media (width >= 768px) and (width <= 1365px) {
+  .about {
+    padding: 50px 0 117px;
+  }
+
+  .about__main {
+    box-sizing: border-box;
+    padding: 0 45px;
+  }
+
+  .about__title {
+    font-family: "Alumni Sans", serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+
+    margin: 0;
+    padding: 10px 0;
+    color: inherit;
+    transform: translate(0, 1px);
+  }
+
+  .about__text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    margin: 0;
+  }
+
+  .about__termin {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+
+    margin: 0;
+    padding: 11px 0 16px;
+    transform: translate(0, -1px);
+  }
+
+  .about__text dd {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+
+    margin: 0;
+    padding: 20px 88px 36px;
+    transform: translate(0, -1px);
+  }
+
+  .about__text dd span {
+    display: none;
+  }
+
+  .about__text span {
+    display: block;
+    padding-top: 8px;
+  }
+
+  .about__picture {
+    width: 678px;
+    height: 345px;
+    padding-bottom: 85px;
+  }
+
+  .about__video {
+    bottom: -84px;
+    left: 32.5%;
+    width: 270px;
+    height: 170px;
+  }
+}
+
+@media (width >= 1366px) {
+  .about {
+    padding: 120px 0 240px;
+  }
+
+  .about__main {
+    box-sizing: border-box;
+    padding: 0 103px;
+
+    display: grid;
+    grid-template-columns: 356px 144px 660px;
+    grid-template-rows: minmax(54px, auto) 25px minmax(22px, auto) 95px minmax(200px, 1fr);
+
+    grid-template-areas:
+      "title . picture"
+      ".     . picture"
+      "text  . picture"
+      "text  . picture"
+      "text  . picture";
+  }
+
+  .about__title {
+    font-family: "Alumni Sans", serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0;
+
+    grid-area: title;
+    margin: 0;
+    color: inherit;
+  }
+
+  .about__text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    grid-area: text;
+    row-gap: 94px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .about__termin {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .about__text dd {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    margin: 0;
+    padding-top: 10px;
+    transform: translate(1px, -9px);
+  }
+
+  .about__text span {
+    display: block;
+    padding-top: 8px;
+  }
+
+  .about__picture {
+    grid-area: picture;
+  }
+
+  .about__video {
+    top: 284px;
+    left: 503px;
+  }
+}

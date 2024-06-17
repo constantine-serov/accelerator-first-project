@@ -1,0 +1,485 @@
+.games__main {
+  box-sizing: border-box;
+  display: grid;
+  margin: 0 auto;
+
+  background-color: $bg-games;
+}
+
+.games__title {
+  font-family: "Alumni Sans", serif;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  color: $text-light;
+
+  margin: 0;
+}
+
+.games__data {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  color: $text-light;
+  margin: 0;
+}
+
+.games__button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+
+  color: $text-light;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: 2px solid $text-light;
+}
+
+.games__picture img {
+  height: 100%;
+  display: block;
+}
+
+@media (width <= 767px) {
+  .games {
+    padding: 25px 0;
+  }
+
+  .games__main {
+    width: 290px;
+
+    grid-template-columns: 40px 117px 37px 56px 40px;
+    grid-template-rows: 40px minmax(49px, auto) minmax(49px, auto) 17px minmax(40px, auto) 16px 60px 40px  minmax(290px, auto);
+
+    grid-template-areas:
+      ".       .       .       .       ."
+      ".       title   .       data    ."
+      ".       title   .       time    ."
+      ".       .       .       .       ."
+      ".       text    text    text    ."
+      ".       .       .       .       ."
+      ".       button  button  button  ."
+      ".       .       .       .       ."
+      "picture picture picture picture picture";
+  }
+
+  .games__title {
+    font-size: 48px;
+    line-height: 54px;
+
+    grid-area: title;
+  }
+
+  .games__data {
+    grid-area: data;
+  }
+
+  .games__data-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+    padding-bottom: 2px;
+    border-bottom: 1px solid $text-light;
+
+    grid-area: title;
+  }
+
+  .games__data-description {
+    display: grid;
+    grid-template-columns: minmax(16px, auto) 1fr;
+    grid-template-rows: minmax(12px, auto) minmax(12px, auto);
+    grid-template-areas:
+      "day month"
+      "day year";
+
+    padding-top: 4px;
+    margin: 0;
+  }
+
+  .games__data-day {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    grid-area: day;
+    margin: 0;
+  }
+
+  .games__data-month {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+
+    grid-area: month;
+    margin: 0;
+  }
+
+  .games__data-year {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+
+    grid-area: year;
+
+    margin: 0;
+  }
+
+  .games__time {
+    grid-area: time;
+    margin: 0;
+  }
+
+  .games__time-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+    padding-bottom: 2px;
+
+    color: $text-light;
+  }
+
+  .games__time-description {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    color: $text-light;
+
+    padding-top: 2px;
+    grid-area: time;
+    margin: 0;
+  }
+
+  .games__text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+    color: $text-light;
+
+    grid-area: text;
+    margin: 0;
+  }
+
+  .games__button {
+    grid-area: button;
+    padding: 22px 10px;
+  }
+
+  .games__picture {
+    grid-area: picture;
+    display: block;
+  }
+}
+
+@media (width >= 768px) and (width <= 1365px) {
+  .games {
+    padding: 60px 0 30px;
+  }
+
+  .games__main {
+    padding: 0;
+    width: 678px;
+
+    grid-template-columns: 40px 100px 20px 100px 40px 378px;
+    grid-template-rows: 40px minmax(72px, 1fr) 8px minmax(52px, auto) 10px minmax(48px, auto) 10px 66px 40px;
+
+    grid-template-areas:
+      ". .      .      .      . picture"
+      ". title  .      data   . picture"
+      ". title  .      .      . picture"
+      ". title  .      time   . picture"
+      ". .      .      .      . picture"
+      ". text   text   text   . picture"
+      ". .      .      .      . picture"
+      ". button button button . picture"
+      ". .      .      .      . picture"
+      ". .      .      .      . .";
+  }
+
+  .games__title {
+    font-size: 48px;
+    line-height: 54px;
+
+    grid-area: title;
+  }
+
+  .games__data {
+    font-size: 18px;
+    line-height: 24px;
+
+    grid-area: data;
+  }
+
+  .games__data-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+
+    padding-bottom: 2px;
+    border-bottom: 1px solid $text-light;
+
+    grid-area: title;
+  }
+
+  .games__data-description {
+    display: grid;
+    grid-template-columns: minmax(18px, auto) 1fr;
+    grid-template-rows: 22px 22px;
+    grid-template-areas:
+      "day month"
+      "day year";
+
+    padding-top: 4px;
+    margin: 0;
+  }
+
+  .games__data-day {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    padding-top: 8px;
+
+    grid-area: day;
+    margin: 0;
+  }
+
+  .games__data-month {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+    grid-area: month;
+    margin: 0;
+  }
+
+  .games__data-year {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+    grid-area: year;
+
+    margin: 0;
+  }
+
+  .games__time {
+    grid-area: time;
+    margin: 0;
+  }
+
+  .games__time-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+
+    padding-bottom: 2px;
+
+    color: $text-light;
+  }
+
+  .games__time-description {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    color: $text-light;
+
+    padding-top: 2px;
+    grid-area: time;
+    margin: 0;
+  }
+
+  .games__text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+
+    color: $text-light;
+
+    grid-area: text;
+    margin: 0;
+  }
+
+  .games__button {
+    grid-area: button;
+    padding: 24px 10px;
+  }
+
+  .games__picture {
+    grid-area: picture;
+    display: block;
+  }
+}
+
+@media (width >= 1366px) {
+  .games {
+    padding: 96px 0 100px;
+  }
+
+  .games__main {
+    width: 1160px;
+    padding: 0;
+
+    grid-template-columns: 80px 168px 77px 95px 80px 660px;
+    grid-template-rows: 60px minmax(80px, 1fr) 20px minmax(92px, auto) 30px minmax(24px, auto) 30px 66px 98px;
+
+    grid-template-areas:
+      ". .      .      .      . picture"
+      ". title  .      data   . picture"
+      ". title  .      .      . picture"
+      ". title  .      time   . picture"
+      ". .      .      .      . picture"
+      ". text   text   text   . picture"
+      ". .      .      .      . picture"
+      ". button button button . picture"
+      ". .      .      .      . picture"
+      ". .      .      .      . .";
+  }
+
+  .games__title {
+    font-size: 82px;
+    line-height: 96px;
+
+    grid-area: title;
+  }
+
+  .games__data {
+    font-size: 18px;
+    line-height: 24px;
+
+    grid-area: data;
+  }
+
+  .games__data-title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+
+    padding-bottom: 3px;
+    border-bottom: 1px solid $text-light;
+
+    grid-area: title;
+  }
+
+  .games__data-description {
+    display: grid;
+    grid-template-columns: minmax(24px, auto) 1fr;
+    grid-template-rows: 22px 22px;
+    grid-template-areas:
+      "day month"
+      "day year";
+
+    padding-top: 4px;
+    margin: 0;
+  }
+
+  .games__data-day {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+
+    padding-top: 5px;
+
+    grid-area: day;
+    margin: 0;
+  }
+
+  .games__data-month {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+
+    grid-area: month;
+
+    margin: 0;
+  }
+
+  .games__data-year {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+
+    grid-area: year;
+
+    padding-top: 3px;
+    margin: 0;
+  }
+
+  .games__time {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+
+    color: $text-light;
+
+    grid-area: time;
+    margin: 0;
+  }
+
+  .games__time-description {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: left;
+
+    color: $text-light;
+
+    grid-area: time;
+    margin: 0;
+  }
+
+  .games__text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $text-light;
+
+    grid-area: text;
+    margin: 0;
+  }
+
+  .games__button {
+    grid-area: button;
+    padding: 27px 10px 2px;
+  }
+
+  .games__picture {
+    grid-area: picture;
+    display: block;
+  }
+}
